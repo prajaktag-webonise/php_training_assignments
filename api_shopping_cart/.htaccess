@@ -1,0 +1,9 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule products$ index.php?request=1 [QSA,NC,L]
+RewriteRule products/(.*)$ index.php?request=2&id=$1 [QSA,NC,L]
+RewriteRule cart$ index.php?request=3 [QSA,NC,L]
+RewriteRule orders$ index.php?request=4 [QSA,NC,L]
+</IfModule>

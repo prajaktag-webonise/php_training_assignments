@@ -1,0 +1,14 @@
+REST API
+1.Product (GET,ADD, DELETE,UPDATE) -Done
+2.ORDER DETAILS,TOTAL -DONE
+3.CART (GET) -DONE  (ADD,UPDATE,DELETE) -left
+
+
+urls
+
+/products   GET    List all products
+/products   POST   Add a product
+/products/1 PULL   Update a product with id 1
+/products/1 DELETE Delete a product with id 1
+/cart       GET    List all products and quantity in cart
+/orders     GET    Order details and total calculation
